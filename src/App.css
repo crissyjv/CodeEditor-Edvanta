@@ -1,0 +1,183 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;&display=swap');
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  margin:0;
+  
+}
+
+.App {
+  margin: 50px auto;
+  position: relative;
+  width: 1000px;
+  height: 80vh;
+  display: block;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.navbar{
+  width: calc(100%-218px);
+  padding: 12px 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #2c7da0;
+  word-spacing: 11px;
+  color: #fff;
+  
+}
+
+.sidebar-menu{
+  position: fixed;
+  left: 181px;
+  width: 220px;
+  height:auto;
+  padding: 5px 12px 12px;
+  background-color: #392f5a;
+  color: black;
+  border-bottom-left-radius: 4px;
+}
+
+
+.logo{
+  text-align: center;
+  font-size: 22px;
+  color: #fff;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #fff;
+}
+
+.sidebar-menu .sidebar-text-wrapper li{
+  list-style-type: none;
+  text-align: center;
+  padding:8px;
+  font-size: 20px;
+  font-weight:bold;
+  transition: 0.5s ease;
+  border-radius: 10px;
+  margin-bottom: 5px;
+
+  cursor: pointer;
+  
+}
+.sidebar-menu .sidebar-text-wrapper li:hover{
+  border-radius: 10px;
+}
+
+.link-text{
+  position:relative;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 100px;
+  padding: 8px;
+  transition: transform 0.6s ease;
+
+}
+.sidebar-menu .sidebar-text-wrapper li:hover .link-text{
+  transform: translateX(7px);
+}
+.sidebar-menu .sidebar-text-wrapper li:hover .icon{
+  background-color:#f7b267;
+}
+
+.icon-wrapper{
+  display:flex;
+  align-items:center;
+  position:absolute;
+  top:9px;
+  left:25px;
+}
+.icon-logo{
+  color:#fff;
+}
+
+
+.btn{
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform 0.5s ease;
+}
+.btn:hover{
+  transform: scaleX(0.95);
+  box-sizing: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.right-page{
+  position: absolute;
+  left: 218px;
+  width: calc(100% - 216px);
+  height: 100%;
+
+}
+
+.heading{
+  display: block;
+ padding: 10px;
+ background-color:#e5383b;
+ text-align: center;
+ color: #fff;
+ font-size: 18px;
+ gap: 3px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ letter-spacing: 1px;
+
+}
+.textarea{
+  display:block;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #f1f1f1;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  color: black;
+  outline: none;
+  border: none;
+}
+.hello-page{
+  border: 1px solid transparent;
+  width: 100%;
+  height: 100%;
+background: url("./Components/organic-shapes-art-backgrounds-on-pastel-color-trendy-modern-organic-shapes-with-copy-space-text-suitable-for-banner-poster-promotion-advertisement-flyer-or-template-free-vector.jpg") no-repeat;  
+background-size: cover;
+}
+
+.copybtn{
+  display: block;
+  padding: 4px 6px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  cursor: pointer;
+  background-color: grey;
+  color: #f1f1f1;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+}
